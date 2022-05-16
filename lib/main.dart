@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pizza_app/Screens/home_page.dart';
+import 'package:pizza_app/Views/homePage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,9 +12,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Mr.Bucks Pizza',
-      initialRoute: "/",
-      routes: {"/": (context) => const HomeScreen()},
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'Mr.Bucks Pizza',
+        home: HomeScreen());
   }
 }
